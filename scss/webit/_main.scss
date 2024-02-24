@@ -1,0 +1,64 @@
+@import "./mixin/mixin_linkTileBox";
+@import "./mixin/mixin_linkTileBox_category";
+
+.main {
+  min-height: 50rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  margin: auto;
+  font-size: 1.4rem;
+  > h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .tileBox_usefullink {
+    @include linkTileBox();
+  }
+
+  .tileBox_wordpress {
+    @include linkTileBox();
+  }
+
+  .tileBox_category {
+    @include linkTileBox_category();
+  }
+  //.posts {
+  .post_header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    > h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1.8rem;
+    }
+    .post_meta {
+      > span {
+        display: inline-block;
+        font-size: 1.4rem;
+        margin-right: 2rem;
+        line-height: 3.6rem;
+      }
+      .ttl_link_category {
+        > a {
+          font-size: 2rem;
+          color: #666666;
+        }
+      }
+    }
+  }
+  .post_content{
+    margin-bottom: 2rem;
+  }
+  //}
+}
+
+@media screen and (max-width: 800px) {
+  .main {
+    min-height: 30rem;
+    margin-bottom: 2rem;
+    width: 98%;
+    margin: auto;
+  }
+}

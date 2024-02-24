@@ -1,0 +1,16 @@
+/*
+Theme Name: webItMemo
+Theme URI: http://wordpress.org/themes/webit
+Author: tomoo suzuki
+Author URI: http://solosoprani.xsrv.co.jp/
+Description: memo for me.
+Version: 1.0
+Text Domain: webit
+*/
+@import './common/reset';
+@import './common/common';
+@import './headerFooter/header';
+@import './headerFooter/footer';
+@import './webit/nav';
+@import './webit/main';
+
