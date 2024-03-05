@@ -5,12 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>
-        <?php wp_title('|', true, 'right'); bloginfo('name') ?>
+        <?php wp_title('|', true, 'right');
+        bloginfo('name') ?>
     </title>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.1.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/webit.js"></script>
-    <link rel="stylesheet"
-        href="<?php echo get_stylesheet_uri(); echo '?'.filemtime(get_stylesheet_directory().'/wpStyle.css'); ?>">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
+    <link rel="stylesheet" href="<?php echo get_stylesheet_uri();
+                                    echo '?' . filemtime(get_stylesheet_directory() . '/wpStyle.css'); ?>">
     <?php wp_head(); ?>
 </head>
 
