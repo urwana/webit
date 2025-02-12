@@ -1,124 +1,128 @@
 .header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-    min-width: 90rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  min-width: 90rem;
 
-    .logo_main_webit {
-        margin-left: 1rem;
-        margin-right: 5rem;
+  .logo_main_webit {
+    margin-left: 1rem;
+    margin-right: 5rem;
 
-        >a {
-            display: block;
-            width: 10rem;
-            height: 10rem;
+    > a {
+      display: block;
+      width: 10rem;
+      height: 10rem;
 
-            >img {
-                width: 100%;
-            }
+      > img {
+        width: 100%;
+      }
+    }
+  }
+
+  .ttl_h1_webit {
+    font-size: 6rem;
+    line-height: 10rem;
+  }
+
+  .searchBox {
+    line-height: 10rem;
+    margin-right: 1rem;
+
+    > form {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      > input {
+        height: 3rem;
+        line-height: 3rem;
+        width: 20rem;
+        padding: 0;
+
+        &::placeholder {
+          padding-left: 1rem;
         }
+      }
+
+      > button {
+        appearance: none;
+        -webkit-appearance: none;
+        background: #7b82a5;
+        color: #ffffff;
+        font-weight: bold;
+        height: 3rem;
+        line-height: 3rem;
+        border: none;
+        padding: 0 1.5rem;
+      }
     }
-
-    .ttl_h1_webit {
-        font-size: 3rem;
-        line-height: 10rem;
-    }
-
-    .searchBox {
-        line-height: 10rem;
-        margin-right: 1rem;
-
-        >form {
-            >input {
-                height: 3rem;
-                line-height: 3rem;
-                width: 20rem;
-                padding: 0;
-
-                &::placeholder {
-                    padding-left: 1rem;
-                }
-            }
-
-            >button {
-                appearance: none;
-                -webkit-appearance: none;
-                background: #7b82a5;
-                color: #ffffff;
-                font-weight: bold;
-                height: 3rem;
-                line-height: 3rem;
-                border: none;
-            }
-        }
-
-    }
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .header {
-        flex-wrap: wrap;
-        margin-bottom: 1.8rem;
-        width: 98%;
-        margin: auto;
-        min-width: 32rem;
+  .header {
+    flex-wrap: wrap;
+    margin-bottom: 1.8rem;
+    width: 98%;
+    margin: auto;
+    min-width: 32rem;
 
-        .logo_main_webit {
-            margin-left: 1%;
-            margin-right: 0;
-            margin-bottom: 2rem;
-            flex: 30%;
+    .logo_main_webit {
+      margin-left: 1%;
+      margin-right: 0;
+      margin-bottom: 2rem;
+      flex: 30%;
 
-            >a {
-                display: block;
-                width: 7rem;
-                height: 7rem;
+      > a {
+        display: block;
+        width: 7rem;
+        height: 7rem;
 
-                >img {
-                    width: 100%;
-                }
-            }
+        > img {
+          width: 100%;
         }
-
-        .ttl_h1_webit {
-            font-size: 2rem;
-            line-height: 7rem;
-            flex: 60%;
-        }
-
-        .searchBox {
-            line-height: 3rem;
-            margin-right: 0;
-            margin-bottom: 3rem;
-            margin-left: 1%;
-            flex:98%;
-            >form {
-                >input {
-                    height: 3rem;
-                    line-height: 3rem;
-                    width: 85%;
-                    padding: 0;
-                    border: solid 1px #e6e6e6;
-                    &::placeholder {
-                        padding-left: 1rem;
-                    }
-                }
-
-                >button {
-                    appearance: none;
-                    -webkit-appearance: none;
-                    background: #7b82a5;
-                    color: #ffffff;
-                    font-weight: bold;
-                    height: 3rem;
-                    line-height: 3rem;
-                    border: none;
-                }
-            }
-        }
+      }
     }
+
+    .ttl_h1_webit {
+      font-size: 2rem;
+      line-height: 7rem;
+      flex: 60%;
+    }
+
+    .searchBox {
+      line-height: 3rem;
+      margin-right: 0;
+      margin-bottom: 3rem;
+      margin-left: 1%;
+      flex: 98%;
+      > form {
+        > input {
+          height: 3rem;
+          line-height: 3rem;
+          width: 85%;
+          padding: 0;
+          border: solid 1px #e6e6e6;
+          &::placeholder {
+            padding-left: 1rem;
+          }
+        }
+
+        > button {
+          appearance: none;
+          -webkit-appearance: none;
+          background: #7b82a5;
+          color: #ffffff;
+          font-weight: bold;
+          height: 3rem;
+          line-height: 3rem;
+          border: none;
+        }
+      }
+    }
+  }
 }
