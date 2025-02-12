@@ -78,16 +78,10 @@ cite,
 code,
 dfn,
 em,
-strong,
 th,
 var {
   font-style: normal;
   font-weight: normal;
-}
-
-ol,
-ul {
-  list-style: none;
 }
 
 caption,
@@ -155,9 +149,7 @@ html {
 }
 html body {
   font-size: 1.4rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic,
-    "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
   color: #666666;
 }
 html body a {
@@ -166,10 +158,10 @@ html body a {
 }
 
 .post_body {
-  font-size: 14px;
+  font-size: 16px;
 }
 .post_body > p {
-  font-size: 14px;
+  font-size: 16px;
 }
 .post_body > p > a {
   font-weight: bold;
@@ -259,11 +251,15 @@ html body a {
   width: 20rem;
   padding: 0;
 }
+.header .searchBox > form > input::-moz-placeholder {
+  padding-left: 1rem;
+}
 .header .searchBox > form > input::placeholder {
   padding-left: 1rem;
 }
 .header .searchBox > form > button {
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
   background: #7b82a5;
   color: #ffffff;
@@ -314,11 +310,15 @@ html body a {
     padding: 0;
     border: solid 1px #e6e6e6;
   }
+  .header .searchBox > form > input::-moz-placeholder {
+    padding-left: 1rem;
+  }
   .header .searchBox > form > input::placeholder {
     padding-left: 1rem;
   }
   .header .searchBox > form > button {
-    appearance: none;
+    -moz-appearance: none;
+         appearance: none;
     -webkit-appearance: none;
     background: #7b82a5;
     color: #ffffff;
@@ -332,6 +332,7 @@ html body a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 7.2rem;
 }
 .footer .band_footer {
   width: 100%;
@@ -343,7 +344,7 @@ html body a {
 }
 .footer .linkBoxWrap {
   box-sizing: border-box;
-  width: calc(50%-1rem);
+  width: calc(50% - 1rem);
   margin-left: 1rem;
 }
 .footer .linkBoxWrap .linkBox {
@@ -395,7 +396,7 @@ html body a {
   padding: 1rem;
   text-decoration: none;
   background: #6c9cbe;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 .menu-menu-1-container > .menu > li > a:hover {
   opacity: 0.5;
@@ -406,7 +407,7 @@ html body a {
   position: absolute;
   top: 3.8rem;
   left: 0;
-  background: white;
+  background: rgb(255, 255, 255);
   z-index: 9;
 }
 .sub-menu > li {
@@ -427,9 +428,9 @@ html body a {
 
 .main {
   min-height: 50rem;
-  margin-bottom: 2rem;
-  width: 80%;
-  margin: auto;
+  margin-top: 7.2rem;
+  max-width: 96rem;
+  margin-inline: auto;
   font-size: 1.4rem;
 }
 .main > h2 {
@@ -560,6 +561,4 @@ html body a {
     width: 98%;
     margin: auto;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -1,87 +1,88 @@
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 
-    body {
-        font-size: 1.4rem;
-        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-        color: #666666;
+  body {
+    font-size: 1.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic,
+      "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ",
+      Meiryo, sans-serif;
+    color: #666666;
 
-        a {
-            display: inline-block;
-            color: #6c9cbe;
-        }
-
-        // br {
-        //     display: block;
-        //     content: '';
-        //     height: 1rem;
-        // }
+    a {
+      display: inline-block;
+      color: #6c9cbe;
     }
+
+    // br {
+    //     display: block;
+    //     content: '';
+    //     height: 1rem;
+    // }
+  }
 }
 
 .post_body {
-    font-size: 14px;
+  font-size: 16px;
 
-    >p {
-        font-size: 14px;
+  > p {
+    font-size: 16px;
 
-        >a {
-            font-weight: bold;
-            margin-bottom: 0.6rem;
-            position: relative;
-            padding-left: 1.4rem;
+    > a {
+      font-weight: bold;
+      margin-bottom: 0.6rem;
+      position: relative;
+      padding-left: 1.4rem;
 
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                left: 0;
-                top: .5rem;
-                width: 1rem;
-                height: 1rem;
-                background: #6c9cbe;
-                border-radius: 50%;
-            }
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0.5rem;
+        width: 1rem;
+        height: 1rem;
+        background: #6c9cbe;
+        border-radius: 50%;
+      }
 
-            &:hover {
-                opacity: 0.5;
-            }
-        }
+      &:hover {
+        opacity: 0.5;
+      }
     }
+  }
 
+  > h3 {
+    margin: 1.2rem 0;
+    padding-bottom: 0.6rem;
+    padding-left: 1.5rem;
+    border-left: solid 1rem #7ea96e;
+    font-size: 2rem;
+    border-bottom: solid 1px #7ea96e;
+  }
 
-    >h3 {
-        margin: 1.2rem 0;
-        padding-bottom: .6rem;
-        padding-left: 1.5rem;
-        border-left: solid 1rem #7ea96e;
-        font-size: 2rem;
-        border-bottom: solid 1px #7ea96e;
+  > h4 {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    font-size: 1.6rem;
+    border-left: double 1rem #7ea96e;
+    border-bottom: solid 1px #7ea96e;
+  }
+
+  > h5 {
+    position: relative;
+    padding-left: 1.4rem;
+    font-size: 1.6rem;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0.7rem;
+      width: 1rem;
+      height: 1rem;
+      background: #7ea96e;
+      border-radius: 50%;
     }
-
-    >h4 {
-        margin: 1rem 0;
-        padding-left: 1rem;
-        font-size: 1.6rem;
-        border-left: double 1rem #7ea96e;
-        border-bottom: solid 1px #7ea96e;
-    }
-
-    >h5 {
-        position: relative;
-        padding-left: 1.4rem;
-        font-size: 1.6rem;
-
-        &:before {
-            content: '';
-            display: block;
-            position: absolute;
-            left: 0;
-            top: .7rem;
-            width: 1rem;
-            height: 1rem;
-            background: #7ea96e;
-            border-radius: 50%;
-        }
-    }
+  }
 }
