@@ -256,7 +256,7 @@ html body a {
   width: 20rem;
   padding: 0;
   border: solid 1px #999999;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 .header .searchBox > form > input::-moz-placeholder {
   padding-left: 1rem;
