@@ -42,6 +42,8 @@
         line-height: 3rem;
         width: 20rem;
         padding: 0;
+        border: solid 1px #999999;
+        border-radius: 1rem;
 
         &::placeholder {
           padding-left: 1rem;

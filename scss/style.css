@@ -255,6 +255,8 @@ html body a {
   line-height: 3rem;
   width: 20rem;
   padding: 0;
+  border: solid 1px #999999;
+  border-radius: 1rem;
 }
 .header .searchBox > form > input::-moz-placeholder {
   padding-left: 1rem;
